@@ -1,8 +1,9 @@
-array = []
+import random
 
-for i in range (20):
-  array.append(random.randint(1 , 20))
+array =[2, 172, 11, 9, 7, 28, 22, 15, 5, 19, 36,  17]
 
+
+n = len(array)
 minimo = abs(array[0] - array[1])
 
 for i in range (n):
@@ -11,12 +12,8 @@ for i in range (n):
     
     if i!=j:
       
-      minimo = abs(array[i])-array[j]
-      
-      if abs(array[i])-array[j] < minimo:
-        print (-1)
-      else:
-        minimo
-      
-  
+      minimo = abs(array[i]-array[j]) if abs(array[i] - array[j]) < minimo else minimo
+ 
+
+print array  
 print minimo
