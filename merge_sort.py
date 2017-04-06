@@ -19,9 +19,9 @@ def mergeSort(x):
   if len(x) == 0 or len(x) == 1:
     return x
   else:
-    middle = len(x)/2
-    a = mergeSort(x[:middle])
-    b = mergeSort(x[middle:])
+    mitad = len(x)/2
+    a = mergeSort(x[:mitad])
+    b = mergeSort(x[mitad:])
     return merge(a,b)
 
 array = []
