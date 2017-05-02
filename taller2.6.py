@@ -25,3 +25,4 @@ for i in range (t,0,-2):
         
       else: 
         cout1 = cout1 +1
+print tm
