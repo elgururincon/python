@@ -16,19 +16,18 @@ def bubbleSort(unordered):
       break
   return ordered
 
-def insertionSort(x):
-   
-  for j in range(1,len(x)):
-    ins = x[j]
-    i = j-1 
-    
-    while (i > -1) and ins < x[i]: 
-   
-      x[i+1]=x[i] 
-      i=i-1 
-      x[i+1] = ins
-  
-  return x
+def insertionSort( array ):
+    for i in range( len(array) ):
+        x = array[i]
+        index = i
+        
+        while(index > 0 and array[index - 1] > x):
+            array[index] = array[index - 1]
+            index -= 1
+        
+        array[index] = x
+        
+    return array
   
 def merge(a,b):
   c = []
